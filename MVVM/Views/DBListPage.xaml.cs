@@ -28,17 +28,12 @@ namespace MVVM.Views
             friendPage.BindingContext = selectedFriend;
             await Navigation.PushAsync(friendPage);
         }
-        async void CreateFriend(object sender, SelectedItemChangedEventArgs e)
+        async void CreateFriend(object sender, EventArgs e)
         {
             DBFriend friend = new DBFriend();
             DBFriendPage friendPage = new DBFriendPage();
             friendPage.BindingContext = friend;
             await Navigation.PushAsync(friendPage);
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-
         }
     }
 }

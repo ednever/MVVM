@@ -6,9 +6,9 @@
         <Label Text="Nimi" />
         <Entry Text="{Binding Name}" />
         <Label Text="Email" />
-        <Entry Text="{Binding Email}" />
+        <Entry Keyboard="Email" Text="{Binding Email}" />
         <Label Text="Telefon" />
-        <Entry Text="{Binding Phone}" />
+        <Entry Keyboard="Telephone"  Text="{Binding Phone}" />
         <StackLayout Orientation="Horizontal">
             <Button Text="Salvesta" Clicked="SaveFriend" />
             <Button Text="Kustuta" Clicked="DeleteFriend" />
